@@ -83,7 +83,7 @@ ul .nav-item{
 .background-top{
     padding-top: 50%;
     margin: 72px 0 0 0;
-    background: url("./assets/Img/body1.jpg");
+    background: url("../Img/body1.jpg");
     background-position: top center;
     background-size: cover;
 } 
