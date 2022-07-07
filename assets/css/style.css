@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+.s-12{
+    font-size: 1.2rem;
+}
+.s-14{
+    font-size: 1.4rem;
+}
+.s-16{
+    font-size: 1.6rem;
+}
+/* Nav */
+
+.logo{
+    width: 12%;
+}
+
+nav{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav .navs{
+    max-width: 95%;
+   }
+
+.navs .navs-content{
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+ul .nav-item{
+    margin: 0 10px;
+    animation: TopDrop ease 1s;
+}
+
+.dropdown-menu .dropdown-item{
+    font-size: 1.6rem;
+    text-transform:none;
+}
+
+/* .dropdown-menu::before{
+    position: absolute;
+    content: "";
+    top: -10px;
+    border: 10px;
+    border-color: white white black white;
+} */
+
+
+
+.dropdown:hover .dropdown-menu-first,
+.dropdown:hover .dropdown-menu-second,
+.dropdown:hover .dropdown-menu-third{
+    position: relative;
+    animation: SlowShow ease 0.7s;
+    display: block;
+}
+
+.container-search_input{
+    text-indent: 15px;
+}
+
+.container-search_input:focus{
+    outline: none;
+}
+
+.container-search_btn{
+    background-color: white;
+    color: rgba(14, 14, 14,0.5);
+}
+
+/* BODY */
+
+.background-top{
+    padding-top: 50%;
+    margin: 72px 0 0 0;
+    background: url("/assets/Img/body1.jpg");
+    background-position: top center;
+    background-size: cover;
+} 
+
+@keyframes SlowShow {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+@keyframes TopDrop {
+from{
+    opacity: 0;
+    transform: translateY(-100%);
+}
+to{
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+@keyframes LeftToRight {
+  from{
+    /* opacity: 0; */
+    /* transform: translateX(-50%); */
+    width: 50%;
+  }
+  to{
+    /* opacity: 1; */
+    /* transform: translateX(0); */
+    width: 100%;
+  }
+}
