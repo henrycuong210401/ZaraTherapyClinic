@@ -15,6 +15,24 @@ html{
 .s-16{
     font-size: 1.6rem;
 }
+.s-18{
+    font-size: 1.8rem;
+}
+.s-20{
+    font-size: 2rem;
+}
+.s-24{
+    font-size: 2.4rem;
+}
+.s-30{
+    font-size: 3rem;
+}
+.s-36{
+    font-size: 3.6rem;
+}
+.s-40{
+    font-size: 4rem;
+}
 /* Nav */
 
 .logo{
@@ -23,6 +41,7 @@ html{
 
 nav{
     position: fixed !important;
+    z-index: 10;
     top: 0;
     left: 0;
     right: 0;
@@ -30,7 +49,7 @@ nav{
 
 nav .navs{
     max-width: 95%;
-   }
+}
 
 .navs .navs-content{
     font-weight: 500;
@@ -51,16 +70,6 @@ ul .nav-item:hover{
     text-transform:none;
     z-index: 10 !important;
 }
-
-/* .dropdown-menu::before{
-    position: absolute;
-    content: "";
-    top: -10px;
-    border: 10px;
-    border-color: white white black white;
-} */
-
-
 
 .dropdown:hover .dropdown-menu-first,
 .dropdown:hover .dropdown-menu-second,
@@ -85,19 +94,52 @@ ul .nav-item:hover{
 
 /* BODY */
 
+/* background */
 .background-top{
-    padding-top: 50%;
+    padding-top: 45%;
     margin: 72px 0 0 0;
     background: url("../Img/body1.jpg");
     background-position: top center;
     background-size: cover;
+    position: relative;
 } 
 
-.carousel-inner .carousel-item img{
-    width: 60% !important;
-    margin: 10px auto;
+.background-content{
+    position: absolute;
+    text-shadow: 1px 1px 0px black;
+    opacity: 0.8;
+    top: 60%;
+    right: 0%;
+}
+.background-content .background-title{
+    font-weight: 350;
+    max-width: 600px;
 }
 
+.background-content .background-text{
+    max-width: 490px;
+}
+
+/* doctor */
+.carousel-inner .carousel-item img{
+    border: 1px solid rgb(190, 189, 189);
+    border-radius: 50%;
+    width: 152px !important;
+    height: 152px;
+    margin: 0 30px;
+}
+.carousel-item .d-flex p{
+    max-width: 700px;
+    min-height: 192px;
+    text-align: justify;
+    font-style: italic;
+}
+.carousel-indicators{
+    opacity: 0.3;
+    bottom: -30px !important;
+}
+
+/* product */
 .owl-carousel{
     max-width: 1000px !important;
 }
@@ -128,9 +170,13 @@ ul .nav-item:hover{
     z-index: 1;
 }
 
-
 .owl-nav{
     display: none;
+}
+
+/* machine */
+.machine-info{
+    height: 700px;
 }
 
 @keyframes SlowShow {
