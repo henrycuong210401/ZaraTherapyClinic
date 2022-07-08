@@ -8,24 +8,36 @@
   <title>ZaraTherapyClinic</title>
   <link rel="icon" type="image/x-icon" href="assets/Img/logo_web.png">
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <script src="assets/jquery/jquery-3.6.0.js"></script>
+
   <link rel="stylesheet" href="assets/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/font/fontawesome-free-6.1.1-web/css/all.min.css">
-  <link rel="stylesheet" href="assets/font/Roboto/Roboto-Black.ttf">
+  <link rel="stylesheet" href="assets/bootstrap-5.2.0-beta1-dist/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap-5.2.0-beta1-dist/css/bootstrap-reboot.min.css">
   <script src="assets/bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/jquery/jquery-3.6.0.js"></script>
+
+  <link rel="stylesheet" href="assets/font/Roboto/Roboto-Black.ttf">
+
+  <!-- <link rel="stylesheet" href="/assets/carousel/docs.theme.min.css"> -->
+  <link rel="stylesheet" href="assets/carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="/assets/carousel/owl.theme.default.min.css">
+  <script src="assets/carousel/owl.carousel.js"></script>
+
 </head>
 
 <body>
   <!-- NAV -->
   <nav class="navbar navbar-expand-lg bg-white">
-    <div class="navs container-fluid s-16 ">
+    <div class="navs container-fluid s-16">
       <!-- Logo -->
-      <a class="navbar-brand logo"  href="#">
+      <a class="navbar-brand logo" href="#">
         <img src="./assets/Img/logo_new.gif" width="158px" alt="">
       </a>
       <!-- Menu list on mobile -->
-      <button class="navbar-toggler p-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler p-3" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <!-- Menu list -->
@@ -34,6 +46,7 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">home</a>
           </li>
+          <li class="nav-item"><a class="nav-link active" href="#">Schedule</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
@@ -73,7 +86,6 @@
               <li><a class="dropdown-item" href="#">The Home Examination Service</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a class="nav-link active" href="#">Schedule</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
@@ -85,11 +97,10 @@
               <li><a class="dropdown-item" href="#">Our clincs</a></li>
               <li><a class="dropdown-item" href="#">Our parteners</a></li>
               <li><a class="dropdown-item" href="#">Join us at Chiropractor</a></li>
-
             </ul>
           </li>
         </ul>
-      <!-- search -->
+        <!-- search -->
         <form class="d-flex border-bottom container-search" role="search" method="">
           <button class="border-0 container-search_btn" type="submit"><i class="fas fa-search"></i></button>
           <input class="border-0 container-search_input" type="search" placeholder="Search" aria-label="Search">
@@ -98,16 +109,94 @@
     </div>
   </nav>
   <!-- BODY -->
-  <div class="">
-    <div class="background-top"></div>
+  <div>
+    <div class="">
+      <div class="background-top"></div>
+    </div>
+    <!--doctor slide -->
+    <div id="carouselExampleIndicators" class="carousel slide carousel-dark mt-5 mb-5" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/Img/Untitled-1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/Img/Untitled-1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/Img/Untitled-1.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!--product slide  -->
+    <div class="owl-carousel owl-theme container mt-5">
+      <div class="item"><img width="80%" src="assets/Img/sp1.png" alt=""></div>
+      <div class="item"><img width="80%" src="assets/Img/sp2.png" alt=""></div>
+      <div class="item"><img width="80%" src="assets/Img/sp3.png" alt=""></div>
+      <div class="item"><img width="80%" src="assets/Img/sp4.png" alt=""></div>
+      <div class="item"><img width="80%" src="assets/Img/sp5.png" alt=""></div>
+      <div class="item"><img width="80%" src="assets/Img/sp6.png" alt=""></div>
+      <!-- <div class="item"><img src="assets/Img/logo_web.png" alt=""></div>
+      <div class="item"><img src="assets/Img/logo_web.png" alt=""></div>
+      <div class="item"><img src="assets/Img/logo_web.png" alt=""></div>
+      <div class="item"><img src="assets/Img/logo_web.png" alt=""></div>
+      <div class="item"><img src="assets/Img/logo_web.png" alt=""></div>
+      <div class="item"><img src="assets/Img/logo_web.png" alt=""></div> -->
+    </div>
   </div>
 </body>
 
 </html>
 
 <script>
-  $(document).ready(function(){
-    $(".background-top").css("animation",'LeftToRight ease 1s');
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 3
+      },
+      1000: {
+        items: 5
+      }
+    },
+    items: 4,
+    loop: true,
+    margin: 10,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true
+  })
+  var owl = $('.owl-carousel');
+  owl.owlCarousel();
+  // Listen to owl events:
+  owl.on('changed.owl.carousel', function (event) {
+    // $(".owl-stage .active:first-child").css("opacity","0.5");
+  })
+
+  $(document).ready(function () {
+    $(".background-top").css("animation", 'LeftToRight ease 1s');
   })
 
 </script>

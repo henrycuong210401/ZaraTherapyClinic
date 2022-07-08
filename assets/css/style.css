@@ -42,9 +42,14 @@ ul .nav-item{
     animation: TopDrop ease 1s;
 }
 
+ul .nav-item:hover{
+    border-bottom: 1px solid black;
+}
+
 .dropdown-menu .dropdown-item{
     font-size: 1.6rem;
     text-transform:none;
+    z-index: 10 !important;
 }
 
 /* .dropdown-menu::before{
@@ -87,6 +92,46 @@ ul .nav-item{
     background-position: top center;
     background-size: cover;
 } 
+
+.carousel-inner .carousel-item img{
+    width: 60% !important;
+    margin: 10px auto;
+}
+
+.owl-carousel{
+    max-width: 1000px !important;
+}
+
+.owl-carousel .owl-item img {
+    width: 90% !important;
+}
+
+.owl-stage-outer::after{
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    opacity: 0.4;
+    top: 0;
+    left: 0;   
+}
+.owl-stage-outer::before{
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    opacity: 0.4;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+
+.owl-nav{
+    display: none;
+}
 
 @keyframes SlowShow {
   from{
