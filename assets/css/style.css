@@ -33,6 +33,9 @@ html{
 .s-40{
     font-size: 4rem;
 }
+.FAF7F2{
+    background: #FAF7F2;
+}
 /* Nav */
 
 .logo{
@@ -121,7 +124,7 @@ ul .nav-item:hover{
 }
 
 /* doctor */
-.carousel-inner .carousel-item img{
+.carousel-inner .carousel-doctor img{
     border: 1px solid rgb(190, 189, 189);
     border-radius: 50%;
     width: 152px !important;
@@ -142,10 +145,6 @@ ul .nav-item:hover{
 /* product */
 .owl-carousel{
     max-width: 1000px !important;
-}
-
-.owl-carousel .owl-item img {
-    width: 90% !important;
 }
 
 .owl-stage-outer::after{
@@ -174,11 +173,25 @@ ul .nav-item:hover{
     display: none;
 }
 
-/* machine */
-.machine-info{
-    height: 700px;
+.item button{
+    border-radius: 10px;
 }
 
+/* Problems */
+.cardd{
+    width: 20% !important;
+}
+.card-body a{
+    border: 1px solid;
+}
+/* featback */
+.featback{
+    
+}
+/* footer */
+.footer{
+    border-top: 1px solid black;
+}
 @keyframes SlowShow {
   from{
     opacity: 0;
