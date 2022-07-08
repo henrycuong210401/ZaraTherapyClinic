@@ -166,7 +166,12 @@
 </html>
 
 <script>
-  $('.owl-carousel').owlCarousel({
+
+
+  $(document).ready(function () {
+    $(".background-top").css("animation", 'LeftToRight ease 1s');
+    
+    $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
     nav: true,
@@ -188,15 +193,6 @@
     autoplayTimeout: 3000,
     autoplayHoverPause: true
   })
-  var owl = $('.owl-carousel');
-  owl.owlCarousel();
-  // Listen to owl events:
-  owl.on('changed.owl.carousel', function (event) {
-    // $(".owl-stage .active:first-child").css("opacity","0.5");
-  })
-
-  $(document).ready(function () {
-    $(".background-top").css("animation", 'LeftToRight ease 1s');
   })
 
 </script>
