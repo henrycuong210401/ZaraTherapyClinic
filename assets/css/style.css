@@ -82,17 +82,13 @@ ul .nav-item:hover{
     display: block;
 }
 
-.container-search_input{
-    text-indent: 15px;
-}
-
-.container-search_input:focus{
-    outline: none;
-}
-
 .container-search_btn{
     background-color: white;
     color: rgba(14, 14, 14,0.5);
+}
+
+.DN button{
+    width: 50px;
 }
 
 /* BODY */
@@ -190,7 +186,23 @@ ul .nav-item:hover{
 }
 /* footer */
 .footer{
-    border-top: 1px solid black;
+    background-color: rgba(187,227,250,0.4);
+    background-size: cover;
+}
+.footer-content a{
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+    color: black;
+    opacity: 0.8;
+}
+.footer-content h3{
+    opacity: 0.9;
+}
+.footer-content a:hover{
+    text-decoration: underline;
+    color: black;
+    opacity: 0.6;
 }
 @keyframes SlowShow {
   from{
