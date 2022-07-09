@@ -9,20 +9,22 @@
   <link rel="icon" type="image/x-icon" href="assets/Img/logo_web.png">
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <script src="assets/jquery/jquery-3.6.0.js"></script>
-
   <link rel="stylesheet" href="assets/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/font/fontawesome-free-6.1.1-web/css/all.min.css">
   <link rel="stylesheet" href="assets/bootstrap-5.2.0-beta1-dist/css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="assets/bootstrap-5.2.0-beta1-dist/css/bootstrap-reboot.min.css">
   <script src="assets/bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js"></script>
-
+  
   <link rel="stylesheet" href="assets/font/Roboto/Roboto-Black.ttf">
+  
+  <script src="assets/jquery/jquery-3.6.0.js"></script>
 
   <!-- <link rel="stylesheet" href="/assets/carousel/docs.theme.min.css"> -->
   <link rel="stylesheet" href="assets/carousel/owl.carousel.min.css">
   <link rel="stylesheet" href="/assets/carousel/owl.theme.default.min.css">
   <script src="assets/carousel/owl.carousel.js"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 
@@ -108,8 +110,8 @@
   <!-- BODY -->
   <div>
     <div class="">
-      <div class="background-top"></div>
-      <div class="background-content">
+      <div class="background-top" data-aos="fade-down"></div>
+      <div class="background-content" data-aos="fade-left">
         <h1 class="background-title s-40 text-white">We’re not like other online therapy sites</h1>
         <p class="background-text s-24 text-white mt-4">It’s so much more than live sessions and messaging. It’s a
           complete happiness toolbox. Get matched with a qualified therapist within a minute.</p>
@@ -117,8 +119,11 @@
     </div>
 
     <!--doctor slide -->
-    <h1 class="text-center mt-5 mb-5 s-30">Our Doctors</h1>
-    <div id="carouselExampleIndicators" class="carousel slide carousel-dark mt-5 mb-5" data-bs-ride="carousel">
+
+    <div class="div" data-aos="fade-right">
+      <h1 class="text-center mt-5 mb-5 s-30">Our Doctors</h1>
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide carousel-dark mt-5 mb-5" data-bs-ride="carousel" data-aos="fade-down">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
           aria-current="true" aria-label="Slide 1"></button>
@@ -248,9 +253,11 @@
     <!-- Problems We Treat -->
     <div class="FAF7F2">
       <div class="container pt-5 pb-5">
-        <h1 class="text-center mt-5 mb-5 s-30">Problems We Treat</h1>
+        <div data-aos="fade-right">
+          <h1 class="text-center mt-5 mb-5 s-30">Problems We Treat</h1>
+        </div>
         <div class="row justify-content-around w-100 Problems">
-          <div class="col-3 d-flex justify-content-center cardd">
+          <div class="col-3 d-flex justify-content-center  cardd" data-aos="flip-right" data-aos-once="true">
             <div class="card" style="width: 100%;">
               <img src="assets/Img/problems/thoat-vi-dia-dem-1.jpg" class="card-img-top" alt="...">
               <div class="card-body">
@@ -261,7 +268,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3 d-flex justify-content-center cardd">
+          <div class="col-3 d-flex justify-content-center cardd" data-aos="flip-right" data-aos-once="true">
             <div class="card" style="width: 100%;">
               <img src="assets/Img/problems/dau-that-lung.jpg" class="card-img-top" alt="...">
               <div class="card-body">
@@ -273,7 +280,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3 d-flex justify-content-center cardd">
+          <div class="col-3 d-flex justify-content-center cardd" data-aos="flip-right" data-aos-once="true">
             <div class="card" style="width: 100%;">
               <img src="assets/Img/problems/thoai-hoa-cot-song.jpg" class="card-img-top" alt="...">
               <div class="card-body">
@@ -285,7 +292,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3 d-flex justify-content-center cardd">
+          <div class="col-3 d-flex justify-content-center cardd" data-aos="flip-right" data-aos-once="true">
             <div class="card" style="width: 100%;">
               <img src="assets/Img/problems/thoai-hoa-dot-song-co-1.jpg" class="card-img-top" alt="...">
               <div class="card-body">
@@ -302,8 +309,10 @@
     </div>
 
     <!--product slide  -->
-    <h1 class="text-center mt-5 mb-5 s-30">Products</h1>
-    <div class="owl-carousel owl-theme container mt-5 pt-5">
+    <div data-aos="fade-right">
+      <h1 class="text-center mt-5 mb-5 s-30">Products</h1>
+    </div>
+    <div class="owl-carousel owl-theme container mt-5 pt-5" data-aos="slide-right">
       <div class="item">
         <img width="80%" class="" src="assets/Img/products/sp1.png" alt="">
         <div class="text-center">
@@ -378,9 +387,11 @@
       </div>
     </div>
 
-    <!-- featback -->
-    <div class="featback container mb-5">
-      <h1 class="text-center mt-5 mb-5 s-30">Testimonials</h1>
+    <!-- feadback -->
+    <div class="feadback container mb-5" data-aos="zoom-in">
+      <div data-aos="fade-right">
+        <h1 class="text-center mt-5 mb-5 s-30">Testimonials</h1>
+      </div>
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -391,17 +402,23 @@
           </div>
 
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
     </div>
 
+    <!-- map -->
+    <div class="map">
+      <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d287.0231350348253!2d108.22255158029763!3d16.06935906242881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421833d5b503cd%3A0xa01308081daa9e49!2zQW5oIG5n4buvIEFNRVMgxJDDoCBO4bq1bmc!5e0!3m2!1svi!2s!4v1657342718158!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+    </div>
     <!-- footer -->
     <div class="footer">
       <div class="d-flex container justify-content-center mt-5">
@@ -423,6 +440,13 @@
       </div>
     </div>
   </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 2000,
+    });
+  </script>
 </body>
 
 </html>
@@ -431,7 +455,7 @@
 
 
   $(document).ready(function () {
-    $(".background-top").css("animation", 'LeftToRight ease 1s');
+    // $(".background-top").css("animation", 'LeftToRight ease 1s');
 
     $('.owl-carousel').owlCarousel({
       loop: true,
@@ -455,6 +479,6 @@
       autoplayTimeout: 3000,
       autoplayHoverPause: true
     })
-  })
 
+    })
 </script>
