@@ -81,7 +81,18 @@ ul .nav-item:hover{
     animation: SlowShow ease 0.7s;
     display: block;
 }
-
+.ProblemsWeTreat .d-flex div{
+    width: 286px;
+    position: relative;
+}
+.ProblemsWeTreat::after{
+    content: "";
+    top: -17px;
+    left: 13%;
+    position: absolute;
+    border: 8px solid;
+    border-color: transparent transparent rgb(180, 180, 180) transparent;
+}
 .container-search_btn{
     background-color: white;
     color: rgba(14, 14, 14,0.5);
