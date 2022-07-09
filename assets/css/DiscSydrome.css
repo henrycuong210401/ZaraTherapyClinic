@@ -5,4 +5,19 @@
 }
 .discsyndrome{
     margin-top: 62.2px;
+    max-width: 1000px !important;
+}
+
+.bodytop-background{
+    position: relative;
+}
+
+.bodytop-background-content {
+    background-color: rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    border: 1px transparent;
+    border-radius: 10px;
+    position: absolute;
+    left: 100px;
+    top: 55%;
 }
