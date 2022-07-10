@@ -17,6 +17,18 @@
 .bodytop-background-head{
     background-image: url("../Img/Headaches/dau-dau-desktop-1.jpg");
 }
+.bodytop-background-foot{
+    background-image: url("../Img/foot/dau-chan-desktop.jpg");
+}
+.bodytop-background-elbow{
+    background-image: url("../Img/elbow/dau-khuyu-tay-desktop.jpg");
+}
+.bodytop-background-wrist{
+    background-image: url("../Img/wrist/dau-co-tay-desktop.jpg");
+}
+.bodytop-background-low{
+    background-image: url("../Img/low/dau-that-lung-desktop.jpg");
+}
 
 .discsyndrome{
     margin-top: 3rem;
@@ -54,4 +66,7 @@ h3{
 }
 .img1{
     margin: 1.5rem 0;
+}
+ul li{
+    margin: 7px 0;
 }
