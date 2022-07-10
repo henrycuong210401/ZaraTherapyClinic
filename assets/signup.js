@@ -1,13 +1,16 @@
 $(document).ready(function () {
   $(".signin").click(function () {
     $(".background-signup").css("display", "flex");
+    $(".register2").css("animation", "");
+    $(".signupp").css("animation", "");
+    $(".register").css("animation", "");
   });
-    $(".background-signup").click(function () {
-      $(".background-signup").css("display", "none");
-      $(".background-signup-content").click(function (event) {
-        event.stopPropagation();
-      });
-    });
+  $(".background-signup-content").click(function (event) {
+    event.stopPropagation();
+  });
+  $(".background-signup").click(function () {
+    $(".background-signup").css("display", "none");
+  });
   //   $(".background-signup-content")
   $(".register-btn").click(function () {
     if ($(".register-btn").text() == "SIGN UP") {
