@@ -29,6 +29,18 @@
 .bodytop-background-low{
     background-image: url("../Img/low/dau-that-lung-desktop.jpg");
 }
+.bodytop-background-scoliosis{
+    background-image: url("../Img/Scoliosis/veo-cot-song-desktop.jpg");
+}
+.bodytop-background-knee{
+    background-image: url("../Img/knee/dau-dau-goi-desktop.jpg");
+}
+.bodytop-background-shoulder{
+    background-image: url("../Img/ShoulderPain/dau-vai-desktop.jpg");
+}
+.bodytop-background-ankle{
+    background-image: url("../Img/ankle/dau-mat-ca-desktop.jpg");
+}
 
 .discsyndrome{
     margin-top: 3rem;
@@ -67,6 +79,15 @@ h3{
 .img1{
     margin: 1.5rem 0;
 }
+ul{
+    margin-left: 10px;
+}
 ul li{
     margin: 7px 0;
+}
+body a{
+    text-decoration: none;
+}
+p::selection{
+    background-color: #5bdcf6;
 }
