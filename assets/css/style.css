@@ -1,247 +1,325 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
-html{
-    font-size: 62.5%;
-    font-family: 'Roboto', sans-serif;
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
 }
-.s-12{
-    font-size: 1.2rem;
+.s-12 {
+  font-size: 1.2rem;
 }
-.s-14{
-    font-size: 1.4rem;
+.s-14 {
+  font-size: 1.4rem;
 }
-.s-16{
-    font-size: 1.6rem;
+.s-16 {
+  font-size: 1.6rem;
 }
-.s-18{
-    font-size: 1.8rem;
+.s-18 {
+  font-size: 1.8rem;
 }
-.s-20{
-    font-size: 2rem;
+.s-20 {
+  font-size: 2rem;
 }
-.s-24{
-    font-size: 2.4rem;
+.s-24 {
+  font-size: 2.4rem;
 }
-.s-30{
-    font-size: 3rem;
+.s-30 {
+  font-size: 3rem;
 }
-.s-36{
-    font-size: 3.6rem;
+.s-36 {
+  font-size: 3.6rem;
 }
-.s-40{
-    font-size: 4rem;
+.s-40 {
+  font-size: 4rem;
 }
-.FAF7F2{
-    background: #FAF7F2;
+.FAF7F2 {
+  background: #faf7f2;
 }
 /* Nav */
 
-.logo{
-    width: 12%;
+.logo {
+  width: 12%;
 }
 
-nav{
-    position: fixed !important;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    right: 0;
+nav {
+  position: fixed !important;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
-nav .navs{
-    max-width: 95%;
+nav .navs {
+  max-width: 95%;
 }
 
-.navs .navs-content{
-    font-weight: 500;
-    text-transform: uppercase;
+.navs .navs-content {
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
-ul .nav-item{
-    margin: 0 10px;
-    animation: TopDrop ease 1s;
+ul .nav-item {
+  margin: 0 10px;
+  animation: TopDrop ease 1s;
 }
 
-ul .nav-item:hover{
-    border-bottom: 1px solid black;
+ul .nav-item:hover {
+  border-bottom: 1px solid black;
 }
 
-.dropdown-menu .dropdown-item{
-    font-size: 1.6rem;
-    text-transform:none;
-    z-index: 10 !important;
+.dropdown-menu .dropdown-item {
+  font-size: 1.6rem;
+  text-transform: none;
+  z-index: 10 !important;
 }
 
 .dropdown:hover .dropdown-menu-first,
 .dropdown:hover .dropdown-menu-second,
-.dropdown:hover .dropdown-menu-third{
-    position: relative;
-    animation: SlowShow ease 0.7s;
-    display: block;
+.dropdown:hover .dropdown-menu-third {
+  position: relative;
+  animation: SlowShow ease 0.7s;
+  display: block;
 }
-.ProblemsWeTreat .d-flex div{
-    width: 286px;
-    position: relative;
+.ProblemsWeTreat .d-flex div {
+  width: 286px;
+  position: relative;
 }
-.ProblemsWeTreat::after{
-    content: "";
-    top: -17px;
-    left: 13%;
-    position: absolute;
-    border: 8px solid;
-    border-color: transparent transparent rgb(180, 180, 180) transparent;
+.ProblemsWeTreat::after {
+  content: "";
+  top: -17px;
+  left: 13%;
+  position: absolute;
+  border: 8px solid;
+  border-color: transparent transparent rgb(180, 180, 180) transparent;
 }
-.container-search_btn{
-    background-color: white;
-    color: rgba(14, 14, 14,0.5);
+.container-search_btn {
+  background-color: white;
+  color: rgba(14, 14, 14, 0.5);
 }
 
-.DN button{
-    width: 50px;
+.DN button {
+  width: 50px;
 }
 
 /* BODY */
 
 /* background */
-.background-top{
-    padding-top: 45%;
-    margin: 72px 0 0 0;
-    background: url("../Img/body1.jpg");
-    background-position: top center;
-    background-size: cover;
-    position: relative;
-} 
-
-.background-content{
-    position: absolute;
-    text-shadow: 1px 1px 0px black;
-    opacity: 0.8;
-    top: 60%;
-    right: 0%;
-}
-.background-content .background-title{
-    font-weight: 350;
-    max-width: 600px;
+.background-top {
+  padding-top: 45%;
+  margin: 72px 0 0 0;
+  background: url("../Img/body1.jpg");
+  background-position: top center;
+  background-size: cover;
+  position: relative;
 }
 
-.background-content .background-text{
-    max-width: 490px;
+.background-content {
+  position: absolute;
+  text-shadow: 1px 1px 0px black;
+  opacity: 0.8;
+  top: 60%;
+  right: 0%;
+}
+.background-content .background-title {
+  font-weight: 350;
+  max-width: 600px;
+}
+
+.background-content .background-text {
+  max-width: 490px;
 }
 
 /* doctor */
-.carousel-inner .carousel-doctor img{
-    border: 1px solid rgb(190, 189, 189);
-    border-radius: 50%;
-    width: 152px !important;
-    height: 152px;
-    margin: 0 30px;
+.carousel-inner .carousel-doctor img {
+  border: 1px solid rgb(190, 189, 189);
+  border-radius: 50%;
+  width: 152px !important;
+  height: 152px;
+  margin: 0 30px;
 }
-.carousel-item .d-flex p{
-    max-width: 700px;
-    min-height: 192px;
-    text-align: justify;
-    font-style: italic;
+.carousel-item .d-flex p {
+  max-width: 700px;
+  min-height: 192px;
+  text-align: justify;
+  font-style: italic;
 }
-.carousel-indicators{
-    opacity: 0.3;
-    bottom: -30px !important;
+.carousel-indicators {
+  opacity: 0.3;
+  bottom: -30px !important;
 }
 
 /* product */
-.owl-carousel{
-    max-width: 1000px !important;
+.owl-carousel {
+  max-width: 1000px !important;
 }
 
-.owl-stage-outer::after{
-    content: "";
-    background-color: #fff;
-    position: absolute;
-    width: 20%;
-    height: 100%;
-    opacity: 0.4;
-    top: 0;
-    left: 0;   
+.owl-stage-outer::after {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
 }
-.owl-stage-outer::before{
-    content: "";
-    background-color: #fff;
-    position: absolute;
-    width: 20%;
-    height: 100%;
-    opacity: 0.4;
-    top: 0;
-    right: 0;
-    z-index: 1;
-}
-
-.owl-nav{
-    display: none;
+.owl-stage-outer::before {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  opacity: 0.4;
+  top: 0;
+  right: 0;
+  z-index: 1;
 }
 
-.item button{
-    border-radius: 10px;
+.owl-nav {
+  display: none;
+}
+
+.item button {
+  border-radius: 10px;
 }
 
 /* Problems */
-.cardd{
-    width: 20% !important;
+.cardd {
+  width: 20% !important;
 }
-.card-body a{
-    border: 1px solid;
+.card-body a {
+  border: 1px solid;
 }
 /* feadback */
 /* .feadback{
     
 } */
 /* footer */
-.footer{
-    background-color: rgba(187,227,250,0.4);
-    background-size: cover;
+.footer {
+  background-color: rgba(187, 227, 250, 0.4);
+  background-size: cover;
 }
-.footer-content a{
-    display: block;
-    margin: 5px 0;
-    text-decoration: none;
-    color: black;
-    opacity: 0.8;
+.footer-content a {
+  display: block;
+  margin: 5px 0;
+  text-decoration: none;
+  color: black;
+  opacity: 0.8;
 }
-.footer-content h3{
-    opacity: 0.9;
+.footer-content h3 {
+  opacity: 0.9;
 }
-.footer-content a:hover{
-    text-decoration: underline;
-    color: black;
-    opacity: 0.6;
+.footer-content a:hover {
+  text-decoration: underline;
+  color: black;
+  opacity: 0.6;
 }
+/* login */
+.background-signup {
+  position: fixed;
+  background-color: rgba(14, 14, 14, 0.5);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  display: none;
+}
+.background-signup-content {
+  width: 700px;
+  height: 400px;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(126, 125, 125);
+  border-radius: 10px;
+  animation: TopDrop ease 1s;
+}
+.register {
+  display: flex;
+  overflow: hidden;
+}
+.register2 {
+  display: none;
+  overflow: hidden;
+}
+.register,
+.signupp {
+  text-align: center;
+  z-index: 15;
+}
+.register input,
+.register2 input {
+  font-size: 16px;
+  background-color: rgb(244, 240, 240);
+}
+.background-signup-content button {
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 35px;
+  width: 40%;
+  outline: 1px solid rgb(231, 229, 229);
+}
+.register input:focus {
+  background-color: rgb(244, 240, 240);
+}
+.signupp {
+  background-color: #96c0ef;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(0, #96c0ef, #0d6efd);
+}
+
 @keyframes SlowShow {
-  from{
+  from {
     opacity: 0;
   }
-  to{
+  to {
     opacity: 1;
   }
 }
 @keyframes TopDrop {
-from{
+  from {
     opacity: 0;
     transform: translateY(-100%);
-}
-to{
+  }
+  to {
     opacity: 1;
     transform: translateY(0);
-}
-}
-@keyframes LeftToRight {
-  from{
-    /* opacity: 0; */
-    /* transform: translateX(-50%); */
-    width: 50%;
-  }
-  to{
-    /* opacity: 1; */
-    /* transform: translateX(0); */
-    width: 100%;
   }
 }
+@keyframes LtR {
+  from {
+    transform: translateX(-130px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes RtL {
+  from {
+    opacity: 0;
+    transform: translateX(+130px);
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes LtoR {
+  from {
+    transform: translateX(-349px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes RtoL {
+    from {
+      transform: translateX(349px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
