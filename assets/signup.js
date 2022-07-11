@@ -22,7 +22,7 @@ $(document).ready(function () {
 
       <div class="register2 w-50 flex-column justify-content-center align-items-center">
         <label for="" class="d-block mb-4">
-          <h1 class="s-40">Create Account</h1>
+          <h1 class="s-40">Register</h1>
         </label>
         <input type="text" class="form-control name w-75 d-inline-block" placeholder="Name" id="">
         <input type="email" class="form-control user w-75 d-inline-block mt-3 mb-3" placeholder="Email"
