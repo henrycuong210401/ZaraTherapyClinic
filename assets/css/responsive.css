@@ -22,6 +22,11 @@
         font-size: 18px;
         margin-left: 10px;
     }
+    .DN button{
+        width: 150px;
+        font-size: 18px;
+
+    }
 }
 /* <768*/
 @media only screen and (max-width: 767px){
@@ -49,5 +54,15 @@
     .background-content .background-title{
         font-size: 28px;
     }
-    
+    .dropdown:hover .dropdown-menu-first div,
+    .dropdown:hover .dropdown-menu-second div{
+        flex-direction: column !important;
+    }
+    .background-signup-content {
+        width: 100%;
+        height: 40%;
+    }
+    .register2 label h1{
+        margin-left: 20px;
+    }
 }
