@@ -58,10 +58,10 @@
     .dropdown:hover .dropdown-menu-second div{
         flex-direction: column !important;
     }
-    .background-signup-content {
+    /* .background-signup-content {
         width: 100%;
         height: 40%;
-    }
+    } */
     .register2 label h1{
         margin-left: 20px;
     }
