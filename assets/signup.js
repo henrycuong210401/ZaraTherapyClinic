@@ -1,5 +1,6 @@
 // login box
 $(document).ready(function () {
+  // create login box
     $(".background-signup").html(`
     <div class="background-signup-content d-flex overflow-hidden">
       <div class="w-50 register flex-column justify-content-center align-items-center">
@@ -9,8 +10,9 @@ $(document).ready(function () {
         <input type="email" class="form-control w-75 email d-inline-block" placeholder="Email" id="exampleInputEmail1">
         <input type="password" class="form-control w-75 password d-inline-block mt-3" placeholder="Password"
           id="exampleInputPassword1">
-        <p class="s-16 mt-3 mb-3">Forgot your password?</p>
-        <button type="button" class="btn btn-primary login-btn bth-signin">SIGN IN</button>
+          <div id="emailHelp" class="text-danger form-text s-14 d-block text-start errorr"></div>
+
+          <p class="s-16 mb-3">Forgot your password?</p>        <button type="button" class="btn btn-primary login-btn bth-signin">SIGN IN</button>
       </div>
 
       <div class="w-50 signupp d-flex flex-column justify-content-center align-items-center">
@@ -33,15 +35,18 @@ $(document).ready(function () {
       </div>
     </div>
     `)
+    // reset animation login box khi tắt bật lại
   $(".signin").click(function () {
     $(".background-signup").css("display", "flex");
     $(".register2").css("animation", "");
     $(".signupp").css("animation", "");
     $(".register").css("animation", "");
   });
+  // vùng hủy close login box
   $(".background-signup-content").click(function (event) {
     event.stopPropagation();
   });
+  // vùng close login box
   $(".background-signup").click(function () {
     $(".background-signup").css("display", "none");
   });
@@ -64,6 +69,7 @@ $(document).ready(function () {
     }
   });
 
+  // tạo và kiểm tra username password
   $(".bth-signup").click(function(){
       var user = $(".user").val();
       var pass = $(".pass").val();
@@ -71,7 +77,12 @@ $(document).ready(function () {
         alert("Write somthing!!");
       }else{
           var newguest = new guest(user,pass);
-          localStorage.setItem("guest",JSON.stringify(newguest));
+          if (!localStorage.getItem("guestID")){
+            localStorage.setItem("guestID","1");
+          }else{
+            localStorage.setItem("guestID",parseInt(localStorage.getItem("guestID"))+1)
+          }
+          localStorage.setItem(localStorage.getItem("guestID"),JSON.stringify(newguest));
           alert("Successful account creation, login please");
           $(".user").val("");
           $(".pass").val("");
@@ -79,22 +90,31 @@ $(document).ready(function () {
       }
     })
     $(".bth-signin").click(function(){
-        var guest2 = JSON.parse(localStorage.getItem("guest"));
-        if(!$(".email").val() || !$(".password")){
-            alert("Write somthing!!");
-        }else{
+      if(!$(".email").val() || !$(".password")){
+        alert("Write somthing!!");
+      }else{
+        for(var i = parseInt(localStorage.getItem("guestID")); i>0 ;i--){
+            var guest2 = JSON.parse(localStorage.getItem(i));
             if(($(".email").val()!=guest2.user) || ($(".password").val()!=guest2.pass)){
-                alert("Username or Password incorrect")
+              $(".errorr").html("Username or Password incorrect.");
             }else{
-                alert("Login successfully");
-                $(".email").val("");
-                $(".password").val("");
-                $(".background-signup").css("display", "none");
-
+              alert("Login successfully");
+              $(".email").val("");
+              $(".password").val("");
+              $(".background-signup").css("display", "none");
+              $(".errorr").html("");
+              break;
             }
+          }
         }
     })
-
+// xóa bớt animation trên mobile
+    const mediaQuery = window.matchMedia('(max-width: 576px)')
+    if(mediaQuery.matches){
+      $('div [data-aos="flip-right"]').removeAttr("data-aos");
+      $('div [data-aos="slide-right"]').removeAttr("data-aos");
+      $('div [data-aos="zoom-in"]').removeAttr("data-aos");
+    }
 });
 function guest(user,pass){
     this.user = user;

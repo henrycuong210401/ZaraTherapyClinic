@@ -464,8 +464,10 @@
         </label>
         <input type="email" class="form-control w-75 email d-inline-block" placeholder="Email" id="exampleInputEmail1">
         <input type="password" class="form-control w-75 passworld d-inline-block mt-3" placeholder="Password"
-          id="exampleInputPassword1">
-        <p class="s-16 mt-3 mb-3">Forgot your password?</p>
+          id="exampleInputPassword1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="text-danger form-text s-14 d-block text-start errorr"></div>
+
+        <p class="s-16 mb-3">Forgot your password?</p>
         <button type="button" class="btn btn-primary login-btn bth-signin">SIGN IN</button>
       </div>
 
@@ -498,7 +500,7 @@
   AOS.init({
     duration: 2000,
   });
-
+  
   $(document).ready(function () {
 
 
