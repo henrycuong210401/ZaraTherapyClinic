@@ -26,7 +26,7 @@
   <nav class="navbar navbar-expand-lg bg-white">
     <div class="navs container-fluid s-16">
       <!-- Logo -->
-      <a class="navbar-brand logo" href="#">
+      <a class="navbar-brand logo" href="./index.html">
         <img src="./assets/Img/logo_new.gif" width="158px" alt="">
       </a>
       <!-- Menu list on mobile -->
@@ -105,6 +105,12 @@
               <li><a class="dropdown-item" href="#">Join us at Chiropractor</a></li>
             </ul>
           </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Store</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
+          </li>
         </ul>
         <!-- sign -->
         <div class="d-flex DN" role="search" method="">
@@ -114,7 +120,7 @@
       </div>
     </div>
   </nav>
-  
+
 
   <!-- BODY -->
   <div>
@@ -425,10 +431,6 @@
       </div>
     </div>
 
-    <!-- map -->
-    <div class="map">
-      <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d287.0231350348253!2d108.22255158029763!3d16.06935906242881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421833d5b503cd%3A0xa01308081daa9e49!2zQW5oIG5n4buvIEFNRVMgxJDDoCBO4bq1bmc!5e0!3m2!1svi!2s!4v1657342718158!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-    </div>
     <!-- footer -->
     <div class="footer">
       <div class="d-flex container justify-content-center mt-5">
@@ -453,37 +455,37 @@
 
   <!-- login -->
   <div class="background-signup justify-content-center align-items-center">
-    <div class="background-signup-content d-flex overflow-hidden">
+    <!-- <div class="background-signup-content d-flex overflow-hidden">
       <div class="w-50 register flex-column justify-content-center align-items-center">
         <label for="" class="d-block mb-4">
           <h1 class="s-40">Sign in</h1>
         </label>
-        <input type="email" class="form-control w-75 d-inline-block" placeholder="Email" id="exampleInputEmail1">
-        <input type="password" class="form-control w-75 d-inline-block mt-3" placeholder="Password"
+        <input type="email" class="form-control w-75 email d-inline-block" placeholder="Email" id="exampleInputEmail1">
+        <input type="password" class="form-control w-75 passworld d-inline-block mt-3" placeholder="Password"
           id="exampleInputPassword1">
         <p class="s-16 mt-3 mb-3">Forgot your password?</p>
-        <button type="button" class="btn btn-primary login-btn">SIGN IN</button>
+        <button type="button" class="btn btn-primary login-btn bth-signin">SIGN IN</button>
       </div>
+
       <div class="w-50 signupp d-flex flex-column justify-content-center align-items-center">
         <label for="" class="d-block mb-4 text-white">
           <h1 class="s-40">Hello, Friend!</h1>
         </label>
         <button type="button" class="btn btn-primary register-btn">SIGN UP</button>
       </div>
+
       <div class="register2 w-50 flex-column justify-content-center align-items-center">
         <label for="" class="d-block mb-4">
           <h1 class="s-40">Create Account</h1>
         </label>
-        <input type="email" class="form-control w-75 d-inline-block" placeholder="Name" id="">
-        <input type="email" class="form-control w-75 d-inline-block mt-3 mb-3" placeholder="Email"
+        <input type="text" class="form-control name w-75 d-inline-block" placeholder="Name" id="">
+        <input type="email" class="form-control user w-75 d-inline-block mt-3 mb-3" placeholder="Email"
           id="exampleInputEmail1">
-        <input type="password" class="form-control w-75 d-inline-block" placeholder="Password"
+        <input type="password" class="form-control pass w-75 d-inline-block" placeholder="Password"
           id="exampleInputPassword1">
-        <button type="button" class="btn btn-primary login-btn mt-3">SIGN UP</button>
+        <button type="button" class="btn btn-primary login-btn bth-signup mt-3">SIGN UP</button>
       </div>
-    </div>
-
-
+    </div> -->
   </div>
 </body>
 
@@ -496,6 +498,8 @@
   });
 
   $(document).ready(function () {
+
+
     $('.owl-carousel').owlCarousel({
       loop: true,
       margin: 10,

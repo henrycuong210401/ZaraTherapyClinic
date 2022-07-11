@@ -27,7 +27,7 @@
     <nav class="navbar navbar-expand-lg bg-white">
         <div class="navs container-fluid s-16">
             <!-- Logo -->
-            <a class="navbar-brand logo" href="#">
+            <a class="navbar-brand logo" href="./index.html">
                 <img src="./assets/Img/logo_new.gif" width="158px" alt="">
             </a>
             <!-- Menu list on mobile -->
@@ -40,7 +40,7 @@
             <div class="navs-content collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-center">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html">home</a>
+                        <a class="nav-link active" aria-current="page" href="/index.html">home</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -106,12 +106,19 @@
                             <li><a class="dropdown-item" href="#">Join us at Chiropractor</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
+                    </li>
                 </ul>
                 <!-- sign -->
-                <form class="d-flex DN" role="search" method="">
-                    <button class="border-0 container-search_btn border-bottom s-14 m-2" type="submit">Sign up</button>
-                    <button class="border-0 container-search_btn border-bottom s-14 m-2" type="submit">Sign in</button>
-                </form>
+                <div class="d-flex DN" role="search" method="">
+                    <!-- <button class="border-0 container-search_btn border-bottom s-14 m-2 signup" type="button">Sign up</button> -->
+                    <button class="border-0 container-search_btn border-bottom s-14 m-2 signin" type="button">Sign
+                        in</button>
+                </div>
             </div>
         </div>
     </nav>
@@ -203,11 +210,14 @@
             </div>
         </div>
     </div>
-
+    <!-- sigin -->
+    <div class="background-signup justify-content-center align-items-center">
+    </div>
 </body>
 
 </html>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="assets/signup.js"></script>
 <script>
     AOS.init({
         duration: 2000,
