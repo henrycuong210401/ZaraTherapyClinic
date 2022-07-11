@@ -101,9 +101,9 @@ ul .nav-item:hover {
 .DN button {
   width: 50px;
 }
-.DN{
-    width:171px;
-    justify-content: end;
+.DN {
+  width: 171px;
+  justify-content: end;
 }
 
 /* BODY */
@@ -112,18 +112,25 @@ ul .nav-item:hover {
 .background-top {
   padding-top: 45%;
   margin: 72px 0 0 0;
-  background: url("../Img/body1.jpg");
+  background-image: linear-gradient(
+      0,
+      rgba(14, 14, 14, 0),
+      rgba(14, 14, 14, 0.3)
+    ),
+    url("../Img/body1.jpg");
   background-position: top center;
   background-size: cover;
   position: relative;
+  overflow: hidden;
 }
-
 .background-content {
   position: absolute;
   text-shadow: 1px 1px 0px black;
   opacity: 0.8;
-  top: 60%;
-  right: 0%;
+  left: 5%;
+  top: 15%;
+  /* top: 50%;
+  right: 5%; */
 }
 .background-content .background-title {
   font-weight: 350;
@@ -193,7 +200,9 @@ ul .nav-item:hover {
   width: 20% !important;
 }
 .card-body a {
+  padding: 3px 10px;
   border: 1px solid;
+  border-radius: 5px;
 }
 /* feadback */
 /* .feadback{
@@ -273,70 +282,70 @@ ul .nav-item:hover {
   background-image: linear-gradient(0, #96c0ef, #0d6efd);
 }
 /* contact */
-.contact-body-content{
-    padding: 20px 0;
+.contact-body-content {
+  padding: 20px 0;
 }
-.contact-body-content input{
-    display: inline-block;
-    width: 90%;
-    margin: 10px;
-    height: 40px;
-    font-size: 16px;
-    line-height: 18px;
-    background-color: #fff !important; 
+.contact-body-content input {
+  display: inline-block;
+  width: 90%;
+  margin: 10px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 18px;
+  background-color: #fff !important;
 }
 .form-control:focus,
-.contact-body-content textarea:focus{
-    outline: none !important;
-    border: 1px solid rgb(205, 201, 201) !important;
-    box-shadow: none !important;
+.contact-body-content textarea:focus {
+  outline: none !important;
+  border: 1px solid rgb(205, 201, 201) !important;
+  box-shadow: none !important;
 }
-.contact-body-content div:last-child textarea{
-    height: 218px;
-    width: 90%;
-    margin: 10px 0;
-    padding: 5px 10px;
-    border: 1px solid rgb(205, 201, 201) !important;
-    resize: none;
+.contact-body-content div:last-child textarea {
+  height: 218px;
+  width: 90%;
+  margin: 10px 0;
+  padding: 5px 10px;
+  border: 1px solid rgb(205, 201, 201) !important;
+  resize: none;
 }
-.contact-body-content div:first-child .form-control:last-child::selection{
-    background-color: transparent;
+.contact-body-content div:first-child .form-control:last-child::selection {
+  background-color: transparent;
 }
-.contact-body-content div:first-child .form-control:last-child{
-    color: rgba(14, 14, 14, 0.6);
-    font-weight: 400;
+.contact-body-content div:first-child .form-control:last-child {
+  color: rgba(14, 14, 14, 0.6);
+  font-weight: 400;
 }
-.contact-body-content div:first-child .form-control:last-child:hover{
-    cursor: default;
-    
+.contact-body-content div:first-child .form-control:last-child:hover {
+  cursor: default;
 }
-.contact-body{
-    margin-top: 62.2px;
+.contact-body {
+  margin-top: 62.2px;
 }
-.contact-body h1{
-    padding-top: 100px;
-    font-weight: 600;
+.contact-body h1 {
+  padding-top: 100px;
+  font-weight: 600;
 }
-.contact-bg{
-    background-image: url("../Img/contact.jpg");
-    /* padding-bottom: 50%; */
-    background-size: cover;
+.contact-bg {
+  background-image: url("../Img/contact.jpg");
+  /* padding-bottom: 50%; */
+  background-size: cover;
 }
-.contact-body button{
-    font-size: 18px;
-    padding: 5px 20px;
-    border-radius: 25px;
-    color: rgb(96, 94, 94);
-    border-color: rgb(205, 201, 201);
+.contact-body button {
+  font-size: 18px;
+  padding: 5px 20px;
+  border-radius: 25px;
+  color: rgb(96, 94, 94);
+  border-color: rgb(205, 201, 201);
 }
-.contact-body button:hover{
-    background-color: rgb(205, 201, 201);
-    border-color: rgb(205, 201, 201);
-    color: black;
+.contact-body button:hover {
+  background-color: rgb(205, 201, 201);
+  border-color: rgb(205, 201, 201);
+  color: black;
 }
-.map,.map iframe{
-    margin-top: 110px;
-    width: 100%;
+.map,
+.map iframe {
+  margin-top: 110px;
+  width: 100%;
 }
 @keyframes SlowShow {
   from {
@@ -385,10 +394,10 @@ ul .nav-item:hover {
   }
 }
 @keyframes RtoL {
-    from {
-      transform: translateX(349px);
-    }
-    to {
-      transform: translateX(0);
-    }
+  from {
+    transform: translateX(349px);
   }
+  to {
+    transform: translateX(0);
+  }
+}
