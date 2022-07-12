@@ -309,15 +309,16 @@ ul .nav-item:hover {
   border: 1px solid rgb(205, 201, 201) !important;
   resize: none;
 }
-.contact-body-content div:first-child .form-control:last-child::selection {
+.contact-body-content .form-control::selection {
   background-color: transparent;
 }
-.contact-body-content div:first-child .form-control:last-child {
+.contact-body-content .dropdown .form-control {
   color: rgba(14, 14, 14, 0.6);
   font-weight: 400;
+  cursor: pointer;
 }
-.contact-body-content div:first-child .form-control:last-child:hover {
-  cursor: default;
+.contact-body-content .dropdown ul{
+  width: 90%;
 }
 .contact-body {
   margin-top: 62.2px;

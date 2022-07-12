@@ -51,6 +51,17 @@
         font-size: 3rem;
 
     }
+    /* content */
+    .contact-body h1{
+        font-size: 36px;
+        text-align: center;
+    }
+    .contact-body-content{
+        flex-direction: column;
+    }
+    .contact-body-content div{
+        width: 100% !important;
+    }
 }
 /* <=576 */
 @media only screen and (max-width: 576px){

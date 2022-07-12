@@ -128,7 +128,7 @@
     <!-- body -->
     <div class="contact-bg">
         <div class="contact-body container d-flex flex-column text align-items-center">
-            <h1 class="s-40">Contact ACC for the nearest chiropractic clinic</h1>
+            <h1 class="s-40">Contact ZaraTherapyClinic for the nearest chiropractic clinic</h1>
             <div class="contact-body-content d-flex w-75">
                 <div class="w-50 text-center">
                     <input type="text" class="form-control " id="exampleInputEmail1" placeholder="Full name"
@@ -137,8 +137,15 @@
                         aria-describedby="emailHelp">
                     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email address"
                         aria-describedby="emailHelp">
-                    <input class="form-control" type="text" value="Choose Clinic" aria-label="readonly input example"
-                        readonly>
+
+                    <div class="dropdown">
+                        <input class="form-control dropdown-toggle" type="text" placeholder="Choose Clinic"
+                            aria-label="readonly input example" readonly id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">36 Yên Bái - Đà Nẵng</a></li>
+                            <!-- <li><a class="dropdown-item" href="#">...</a></li> -->
+                        </ul>
+                    </div>
                 </div>
                 <div class="w-50 text-center">
                     <textarea class="s-16" name="" id="" placeholder="content" cols="30" rows="10"></textarea>
